@@ -1,0 +1,35 @@
+body {
+  background-color: #CDDDDD;
+  
+  margin: 0;
+  padding: 0;
+}
+
+.navigate-bar {
+  background-color: #2E2F2F;
+  color: #ACBDBA;
+  padding: 10px;
+  text-align: left;
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: #ACBDBA;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
