@@ -1,21 +1,39 @@
 import React from "react";
 import { HashRouter as Hashrouter, Routes, Route, Navigate } from "react-router-dom";
+import profileImage from "../resources/img/profile.jpeg";
 import "./css/Home.css";
 function Home() {
+
+    
     return (
+
         <div>
             <nav>
                 <div className="navigate-bar">Lenguajes
                     {/*lenguajes a añadir*/}
                 </div>
             </nav>
+            <ul id="scene" data-friction-x="0.03"
+                data-friction-y="0.05">
+                <li class="layer" id="specks" data-depth="0.1"></li>
+                <li class="layer" id="layer-1" data-depth="0.15">
+                    <div class="img" id="img-1"></div>
+                </li>
+                <li class="layer" id="layer-2" data-depth="0.25">
+                    <div class="img" id="img-2"></div>
+                </li>
+                <li class="layer" id="layer-3" data-depth="0.45">
+                    <div class="img" id="img-3"></div>
+                </li>
+            </ul>
+            
 
             <div className="container">
                 <h1>
                     Andres Felipe Salamanca Ramos
                 </h1>
-                
-                
+                <img src={profileImage} alt="imagen" className="profileImage" />
+
             </div>
 
         </div>
@@ -31,4 +49,4 @@ export default Home;
 
 
 
- 
+
